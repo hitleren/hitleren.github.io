@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>hitleren</title>
   
-  <subtitle>副标题</subtitle>
+  <subtitle>陈俊任个人博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.hitleren.club/"/>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>我的第一个博客</title>
-    <link href="http://www.hitleren.club/2020/04/10/wo-de-di-yi-ge-bo-ke/"/>
-    <id>http://www.hitleren.club/2020/04/10/wo-de-di-yi-ge-bo-ke/</id>
+    <link href="http://www.hitleren.club/posts/undefined.html"/>
+    <id>http://www.hitleren.club/posts/undefined.html</id>
     <published>2020-04-10T01:57:23.000Z</published>
     <updated>2020-04-10T02:49:25.378Z</updated>
     
@@ -53,8 +53,8 @@ system.out.printif()&lt;/code&gt;&lt;/pre&gt;&lt;table&gt;
   
   <entry>
     <title>Hello World</title>
-    <link href="http://www.hitleren.club/2020/04/09/hello-world/"/>
-    <id>http://www.hitleren.club/2020/04/09/hello-world/</id>
+    <link href="http://www.hitleren.club/posts/undefined.html"/>
+    <id>http://www.hitleren.club/posts/undefined.html</id>
     <published>2020-04-09T06:51:01.686Z</published>
     <updated>2020-04-09T06:51:01.686Z</updated>
     
