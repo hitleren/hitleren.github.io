@@ -22,7 +22,7 @@
 
     .head-container {
         position: absolute;
-        padding: 0px 30px;
+        padding: 0px 160px;
         width: 100%;
     }
 
@@ -248,7 +248,7 @@ mark {
 }
 /* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色. */
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);/*修改成自己喜欢的颜色值,这个是绿色*/
+    background-image: linear-gradient(to right, #bf30ac 0%, #0f9d58 100%);/*修改成自己喜欢的颜色值,这个是绿色*/
     opacity: 0.8;  /*透明效果 值范围 0~1，看情况自己修改*/
 }
 
@@ -597,7 +597,7 @@ header .go-back i {
     font-weight: 400;
 }
 
- @-webkit-keyframes rainbow {
+/*  @-webkit-keyframes rainbow {
 
     0%,
     100% {
@@ -641,9 +641,9 @@ header .go-back i {
         background: -moz-linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
     }
-} 
+}  */
 
-@keyframes rainbow {
+/* @keyframes rainbow {
 
     0%,
     100% {
@@ -687,7 +687,7 @@ header .go-back i {
         background: -moz-linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
     }
-} 
+}  */
 
 .index-card {
     margin-top: -10px;
