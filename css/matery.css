@@ -1637,7 +1637,16 @@ thead {
     max-width: 160px;
     width: 100%;
     margin: 0 auto;
-    transform: translate3d(0, -65%, 0);
+    /* transform: translate3d(0, -65%, 0); */
+    
+}
+
+.avatar-img .rotate:hover{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
 }
 
 .profile .author {
