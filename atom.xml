@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.hitleren.club/"/>
-  <updated>2020-04-10T09:53:57.357Z</updated>
+  <updated>2020-04-13T09:41:42.186Z</updated>
   <id>https://www.hitleren.club/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Ribbon是什么</title>
+    <link href="https://www.hitleren.club/posts/5960.html"/>
+    <id>https://www.hitleren.club/posts/5960.html</id>
+    <published>2020-04-13T08:38:23.000Z</published>
+    <updated>2020-04-13T09:41:42.186Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Springcloud" scheme="https://www.hitleren.club/categories/Springcloud/"/>
+    
+    
+      <category term="Ribbon" scheme="https://www.hitleren.club/tags/Ribbon/"/>
+    
+      <category term="Springcloud" scheme="https://www.hitleren.club/tags/Springcloud/"/>
+    
+  </entry>
+  
+  <entry>
     <title>我的第一个博客</title>
     <link href="https://www.hitleren.club/posts/e180.html"/>
     <id>https://www.hitleren.club/posts/e180.html</id>
     <published>2020-04-10T01:57:23.000Z</published>
-    <updated>2020-04-10T09:53:57.357Z</updated>
+    <updated>2020-04-13T04:00:45.624Z</updated>
     
     <summary type="html">
     
@@ -50,7 +79,7 @@
     <link href="https://www.hitleren.club/posts/3eeb.html"/>
     <id>https://www.hitleren.club/posts/3eeb.html</id>
     <published>2020-04-09T06:51:01.686Z</published>
-    <updated>2020-04-10T09:53:57.349Z</updated>
+    <updated>2020-04-13T04:00:54.250Z</updated>
     
     <summary type="html">
     

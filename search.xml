@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Ribbon是什么</title>
+      <link href="/posts/5960.html"/>
+      <url>/posts/5960.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1、Ribbon-是什么"><a href="#1、Ribbon-是什么" class="headerlink" title="1、Ribbon 是什么?"></a>1、Ribbon 是什么?</h2><p><strong>Spring Cloud Ribbon 是基于Netflix Ribbon 实现的一套客户端 负载均衡的工具。</strong></p><p>Ribbon 是 Netflix 发布的开源项目，主要功能是<strong>提供客户端的软件负载均衡算法和服务调用</strong>。Ribbon 客户端组件提供一系列完善的配置项如连接超时，重试等。简单的说，就是在配置文件中列出 Load Balancer（简称LB）后面所有的机器，Ribbon 会自动的帮助你基于某种规则（如简单轮询、随机连接等）去连接这些机器。我们很容易使用Ribbon实现自定义的负载均衡算法。</p><h3 id="1-1、LB负载均衡（Load-Balance）"><a href="#1-1、LB负载均衡（Load-Balance）" class="headerlink" title="1.1、LB负载均衡（Load Balance）"></a><strong>1.1、LB负载均衡（Load Balance）</strong></h3><p>​        简单的说就是将用户的请求平摊的分配到多个服务上，从而达到系统的HA（高可用）。常见的负载均衡有软件 Nginx，LVS，硬件F5 等。</p><p><strong>集中式B</strong></p><p>即在服务的消费方和提供方之间使用独立的LB设施（可以是硬件，如F5，也可以是软件，如nginx）,由该设施负责把访问请求通过某种策略转发至服务的提供方</p><p><strong>进程内LB</strong></p><p>将 LB 逻辑集成到消费方，消费方从服务注册中心获知有哪些地址可用，然后自己再从这些地址中选择出一个合适的服务器。Ribbon就属于进程内 LB ，它只是一个类库，集成与消费方进程，消费方通过它来获取到服务提供方的地址。</p><p>Ribbon 就是 负载均衡 + RestTemplate调用，最终实现RPC的远程调用。</p><h3 id="1-2、负载均衡又区分了两种类型："><a href="#1-2、负载均衡又区分了两种类型：" class="headerlink" title="1.2、负载均衡又区分了两种类型："></a><strong>1.2、负载均衡又区分了两种类型：</strong></h3><ul><li>客户端负载均衡(Ribbon)</li></ul><p>服务实例的<strong>清单在客户端</strong>，客户端进行负载均衡算法分配。</p><p>(客户端可以从Eureka Server中得到一份服务清单，在发送请求时通过负载均衡算法，在多个服务器之间选择一个进行访问)</p><ul><li>服务端负载均衡(Nginx)</li></ul><p>服务实例的<strong>清单在服务端</strong>，服务器进行负载均衡算法分配</p><p>下面这张图就是客户端均衡</p><img src="http://q8mcnress.bkt.clouddn.com/qiniucdn.com/qnssl.com/qbox.me/20200413/iMK7B4Cvm7Gd.png?imageslim" alt="img" style="zoom: 33%;"><h2 id="2、Ribbon使用"><a href="#2、Ribbon使用" class="headerlink" title="2、Ribbon使用"></a><strong>2、Ribbon使用</strong></h2><h3 id="2-1、引入ribbon的依赖"><a href="#2-1、引入ribbon的依赖" class="headerlink" title="2.1、引入ribbon的依赖"></a><strong>2.1、引入ribbon的依赖</strong></h3><p>由于eureka天生集成了ribbon,所以可以不用添加依赖就可以用ribbon</p><img src="http://q8mcnress.bkt.clouddn.com/qiniucdn.com/qnssl.com/qbox.me/20200413/8epGcLkEhybP.png?imageslim" alt="img" style="zoom: 67%;"><h3 id="2-2、Ribbon的负载均衡机制-IRule"><a href="#2-2、Ribbon的负载均衡机制-IRule" class="headerlink" title="2.2、Ribbon的负载均衡机制 IRule"></a><strong>2.2、Ribbon的负载均衡机制 IRule</strong></h3><p>默认采用轮询机制</p><img src="http://q8mcnress.bkt.clouddn.com/qiniucdn.com/qnssl.com/qbox.me/20200413/oENlkkTSLXjs.png?imageslim" alt="img" style="zoom:50%;"><h3 id="2-3、创建规则类"><a href="#2-3、创建规则类" class="headerlink" title="2.3、创建规则类"></a><strong>2.3、创建规则类</strong></h3><p>这个自定义配置类不能放在 @ComponentScan 所扫描的当前包下以及子包下，否则自定义的配置类就会被所有的 Ribbon 客户端所共享，达不到<strong>特殊化定制</strong>的目的了。所以我们在java目录下新建 com.atguigu.myrule.MyselfRule类,这里我们创建出<strong>随机规则</strong></p><p>@Configuration public class MyselfRule {     @Bean    public IRule myRule(){        return new RandomRule(); //定义为随机    } } </p><h3 id="2-4、主启动类添加注解"><a href="#2-4、主启动类添加注解" class="headerlink" title="2.4、主启动类添加注解"></a><strong>2.4、主启动类添加注解</strong></h3><p>@RibbonClient(name = “CLOUD-PAYMENT-SERVICE”,configuration = MyselfRule.class) </p><img src="http://q8mcnress.bkt.clouddn.com/qiniucdn.com/qnssl.com/qbox.me/20200413/0YK0TKQw2Xuu.png?imageslim" alt="img" style="zoom: 50%;"><p><strong>2.5、测试</strong></p><p><img src="http://q8mcnress.bkt.clouddn.com/qiniucdn.com/qnssl.com/qbox.me/20200413/3M56bqzDuI1Q.png?imageslim" alt="img">))</p><p><strong>在之前轮询的情况下端口是8001与8002交替出现,而负载均衡规则变为随机后,端口是随机出现的</strong></p><p><strong>注：如果在restTemplate类前面配置了@LoadBalanced，负载均衡注解，如果不创建规则类，则默认的规则是**</strong>轮询的方式**</p><p><img src="http://q8mcnress.bkt.clouddn.com/qiniucdn.com/qnssl.com/qbox.me/20200413/XUgrc3MhpUCp.png?imageslim" alt="img">))</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Springcloud </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ribbon </tag>
+            
+            <tag> Springcloud </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的第一个博客</title>
       <link href="/posts/e180.html"/>
       <url>/posts/e180.html</url>
