@@ -63,7 +63,7 @@ if(/[Ff]irefox(\/\d+\.\d+)/.test(userAgent)){tempArray=/([Ff]irefox)\/(\d+\.\d+)
                 else{if(/[Vv]ersion\/\d+\.\d+\.\d+(\.\d)* *[Ss]afari/.test(userAgent)){tempArray=/[Vv]ersion\/(\d+\.\d+\.\d+)(\.\d)* *([Ss]afari)/.exec(userAgent);
                     info+=tempArray[3]+tempArray[1]}else{if(/[Oo]pera.+[Vv]ersion\/\d+\.\d+/.test(userAgent)){tempArray=/([Oo]pera).+[Vv]ersion\/(\d+)\.\d+/.exec(userAgent);info+=tempArray[1]+tempArray[2]}else{info+="unknown"}}}}}}}return info};
                   
-                    document.write("<h3>欢迎来自"+returnCitySN["cname"]+"的朋友</h3>");
+                    document.write("<h5>欢迎来自"+returnCitySN["cname"]+"的朋友</h5>");
                     document.write("<br>您的 IP 是："+returnCitySN["cip"]);
                     document.write("<br>您使用的是："+getOSAndBrowser());
                     
