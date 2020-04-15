@@ -6,22 +6,22 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.hitleren.club/"/>
-  <updated>2020-04-14T07:47:47.745Z</updated>
+  <updated>2020-04-14T15:49:22.269Z</updated>
   <id>https://www.hitleren.club/</id>
   
   <author>
-    <name>hitleren</name>
+    <name>Hitleren</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Ribbon是什么</title>
+    <title>Ribbon</title>
     <link href="https://www.hitleren.club/posts/5960.html"/>
     <id>https://www.hitleren.club/posts/5960.html</id>
     <published>2020-04-13T08:38:23.000Z</published>
-    <updated>2020-04-14T07:47:47.745Z</updated>
+    <updated>2020-04-14T15:49:22.269Z</updated>
     
     <summary type="html">
     
@@ -39,7 +39,119 @@
       <category term="Springcloud" scheme="https://www.hitleren.club/categories/Springcloud/"/>
     
     
+      <category term="Springcloud" scheme="https://www.hitleren.club/tags/Springcloud/"/>
+    
       <category term="Ribbon" scheme="https://www.hitleren.club/tags/Ribbon/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3、consul</title>
+    <link href="https://www.hitleren.club/posts/6213.html"/>
+    <id>https://www.hitleren.club/posts/6213.html</id>
+    <published>2020-04-12T13:43:23.000Z</published>
+    <updated>2020-04-14T15:48:26.523Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Springcloud" scheme="https://www.hitleren.club/categories/Springcloud/"/>
+    
+    
+      <category term="Springcloud" scheme="https://www.hitleren.club/tags/Springcloud/"/>
+    
+      <category term="consul" scheme="https://www.hitleren.club/tags/consul/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3、Eureka</title>
+    <link href="https://www.hitleren.club/posts/4dd2.html"/>
+    <id>https://www.hitleren.club/posts/4dd2.html</id>
+    <published>2020-04-12T12:43:23.000Z</published>
+    <updated>2020-04-14T15:47:09.995Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Springcloud" scheme="https://www.hitleren.club/categories/Springcloud/"/>
+    
+    
+      <category term="Springcloud" scheme="https://www.hitleren.club/tags/Springcloud/"/>
+    
+      <category term="Eureka" scheme="https://www.hitleren.club/tags/Eureka/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2、消费模块和公共模块</title>
+    <link href="https://www.hitleren.club/posts/7245.html"/>
+    <id>https://www.hitleren.club/posts/7245.html</id>
+    <published>2020-04-11T12:43:23.000Z</published>
+    <updated>2020-04-14T15:45:36.621Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Springcloud" scheme="https://www.hitleren.club/categories/Springcloud/"/>
+    
+    
+      <category term="Springcloud" scheme="https://www.hitleren.club/tags/Springcloud/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1、springcloud环境搭建</title>
+    <link href="https://www.hitleren.club/posts/bc85.html"/>
+    <id>https://www.hitleren.club/posts/bc85.html</id>
+    <published>2020-04-11T11:38:23.000Z</published>
+    <updated>2020-04-14T15:45:20.811Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Springcloud" scheme="https://www.hitleren.club/categories/Springcloud/"/>
+    
     
       <category term="Springcloud" scheme="https://www.hitleren.club/tags/Springcloud/"/>
     
@@ -50,7 +162,7 @@
     <link href="https://www.hitleren.club/posts/e180.html"/>
     <id>https://www.hitleren.club/posts/e180.html</id>
     <published>2020-04-10T01:57:23.000Z</published>
-    <updated>2020-04-14T07:48:41.728Z</updated>
+    <updated>2020-04-14T15:49:48.352Z</updated>
     
     <summary type="html">
     
@@ -79,7 +191,7 @@
     <link href="https://www.hitleren.club/posts/3eeb.html"/>
     <id>https://www.hitleren.club/posts/3eeb.html</id>
     <published>2020-04-09T06:51:01.686Z</published>
-    <updated>2020-04-14T07:49:12.838Z</updated>
+    <updated>2020-04-14T15:50:10.690Z</updated>
     
     <summary type="html">
     
